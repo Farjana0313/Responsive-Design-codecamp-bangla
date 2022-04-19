@@ -1,0 +1,55 @@
+*{
+    /* m0px */
+    margin: 0Px;
+    /* p0px */
+    padding: 0px;
+}
+body{
+    font-family: sans-serif;
+    font-size:25px;
+    width: 100%;
+    min-height: 100vh;
+}
+.container {
+    width:50%;
+    height: 50vh;
+    /* df */
+    display: flex;
+    border: 1px solid red;
+    flex-direction: column;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* jc */
+    /* justify-content: flex-start; */
+    /* justify-content: center; */
+    /* justify-content: end; */
+    /* sb */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* ac */
+    flex-wrap: wrap;
+    /* align-content: center; */
+    /* align-content: flex-end; */
+    /* align-content: space-around; */
+    /* align-content: space-around; */
+    /* align-content: stretch; */
+    /* pc */
+    /* place-content: end center; */
+    /* gap: 40px; */
+    /* align-items: center; */
+}
+.box-1{
+
+}
+.box-2{
+
+}
+.box-3{
+    /* as */
+ align-self: end;
+}
+.box-4{
+
+}
