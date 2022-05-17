@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -8,16 +8,86 @@ body {
     font-family: sans-serif;
     font-size: 35px;
 }
+
 .container {
-    border: 4px solid red;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-color: #fff;
     /* display: grid;
     place-content: center; */
 }
 
-@media screen  {
-    
+#seize {
+    color: red;
+}
+
+/* 
+color-1: #cbd4db ; // Mobile
+color-2: #fff1e6 ; // Tablet
+color-1: #52b788 ; // Laptop
+color-1: #bee1e6 ; // Desktop
+*/
+/* Break Points
+$mobile  : 576px;
+$tablet  : 768px;
+$laptop  : 992px; 
+$desktop : 1200px;
+*/
+
+/* 
+desktop first approach ->laptop->tablet->mobile
+mobile first approach ->tablet -> laptop ->desktop
+*/
+/* 
+desktop first approach ->laptop->tablet->mobile */
+/* @media (max-width:1200px) {
+    .container {
+        background-color: #bee1e6;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        background-color: #52b788;
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        background-color: #fff1e6;
+    }
+}
+
+@media (max-width:576px) {
+    .container {
+        background-color: #cbd4db;
+    }
+} */
+/* 
+mobile first approach ->tablet -> laptop ->desktop */
+@media (min-width:576px) {
+    .container {
+        background-color: #cbd4db;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        background-color: #fff1e6;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        background-color: #52b788;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        background-color: #bee1e6;
+    }
 }
