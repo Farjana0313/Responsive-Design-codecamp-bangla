@@ -1,0 +1,152 @@
+* {
+    margin: 0px 15px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+
+.navbar__logo {
+    font-size: 4vw;
+}
+
+.navbar__links {
+    display: flex;
+    font-size: 2.5vw;
+    gap: 15px;
+}
+
+.navbar__links-1 {}
+
+.navbar__links-2 {}
+
+.navbar__links-3 {}
+
+/* Main */
+.main {
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.main__image {
+    width: 50%;
+}
+
+.main__image {
+    background-image: url('./img/Portrait.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.main__text {
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__text-1 {
+    font-size: 10vw;
+}
+
+.main__text-2,
+.main__text-3,
+.main__text-4 {
+    font-size: 5vw;
+}
+
+/* Footer */
+.footer {
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 20px;
+    padding-right: 10px;
+}
+
+.footer img {
+    width: 5.3vw;
+}
+
+/* Media Queries are here */
+/* Desktop first approach */
+@media (max-width:650px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar__logo {
+        font-size: 40px;
+    }
+
+    .navbar__links {
+        display: none;
+    }
+
+    .main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main__text {
+        width: 100%;
+    }
+    .main__text-1{
+        display: none;
+    }
+    
+.main__text-2,
+.main__text-3,
+.main__text-4 {
+    font-size:28px;
+}
+    .main__image {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    [class^="footer__"] img {
+        width: 35px;
+        height: 35px;
+        /* width: 45px;
+        height: 45px; */
+    }
+
+    .footer {
+        padding-right: 0;
+        justify-content: center;
+        gap: 0;
+    }
+}
